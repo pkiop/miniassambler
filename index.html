@@ -1,0 +1,24 @@
+<head>
+
+</head>
+<body>
+
+
+  ​<textarea rows="30" cols="20" id="input"></textarea>
+  <textarea rows="30" cols="40" id="output"></textarea>
+  <button onclick="input()">입력받기</button>
+  <script type="text/javascript" src="Assembler.js"></script>
+  <script>
+    function input() {
+      var input = document.getElementById("input").value;
+      var t1 = document.getElementById("output");
+      var range = interprete(input);
+      for(const a of range) {
+        t1.value += a + '\n';
+      } 
+    }
+    
+  </script>
+    
+</body>
+
